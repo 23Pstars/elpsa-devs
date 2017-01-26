@@ -1,0 +1,39 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title_footer | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div>
+
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            {{ site.author | escape }}
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <span class="icon icon--github">{% include icon-github.svg %}</span>
+            <a href="https://github.com/23Pstars/elpsa-logs">
+              <span class="username">elpsa-logs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
