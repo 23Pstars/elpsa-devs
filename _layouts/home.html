@@ -22,7 +22,7 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
         <div class="post-content">
-          {{ post.content | strip_html | slice: 0, 75 }}...
+          {{ post.content | strip_html | slice: 0, 350 }}...
         </div>
       </li>
     {% endfor %}
