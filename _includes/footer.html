@@ -11,17 +11,25 @@
       </div>
 
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {{ site.author | escape }}
+        <h3>Categories</h3>
+        <ul>
+          {% for category in site.categories %}
+            <li>
+              <a href="/category#{{ category | first }}">
+                {{ category | first }}
+              </a>
             </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
+          {% endfor %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
+        <ul class="contact-list">
+          <li>{{ site.author | escape }}</li>
+          {% if site.email %}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% endif %}
+        </ul>
         <ul class="social-media-list">
           <li>
             <span class="icon icon--github">{% include icon-github.svg %}</span>

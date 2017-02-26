@@ -235,3 +235,21 @@
     }
   }
 }
+
+/**
+ * Categories
+ */
+.category {
+  .post-list {
+    & > li {
+      margin-bottom: 0;
+    }
+    .post-meta {
+      margin-right: 10px;
+    }
+    .post-link {
+      display: inline;
+      font-size: 14px;
+    }
+  }
+}
